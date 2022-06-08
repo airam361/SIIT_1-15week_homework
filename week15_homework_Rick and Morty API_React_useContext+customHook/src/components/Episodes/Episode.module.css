@@ -1,0 +1,44 @@
+
+.episode {
+  min-width: 21rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f5f5f5;
+  box-shadow: 3px 3px 4px 4px #1111114d;
+}
+.active-episode {
+  background-color: #ff9800;
+}
+.control {
+  display: flex;
+}
+.control > label {
+  display: inline-block;
+  width: 20%;
+  min-width: 7rem;
+}
+output {
+  display: inline;
+  margin: 0;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+.control > button {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.control > button:hover {
+  color: #ff9800;
+}
+.control > .button-active:disabled,
+.control > .button-active:hover {
+  cursor: default;
+  color: #111;
+}

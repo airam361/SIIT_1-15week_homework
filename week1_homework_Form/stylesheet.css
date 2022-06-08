@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #3f3f3f;
+  /* font-size: larger; */
+}
+
+.container {
+  max-width: 40rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  margin: 3rem auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 2px solid #3f3f3f;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+fieldset button {
+  background-color: #3f3f3f;
+  color: white;
+  border: 1px solid #3f3f3f;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #796d6d;
+  border: 1px solid #796d6d;
+}
+
+fieldset textarea {
+  display: inline-flex;
+  border: 1px solid #3f3f3f;
+  border-radius: 8px;
+  min-width: 100%;
+  min-height: 100px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form {
+  padding: 1rem;
+}
+
+.control-group {
+  padding: 0.5rem;
+}
+
+.control-group > label {
+  font-weight: bold;
+  display: inline-block;
+  width: 30%;
+}
+
+.last-fieldset {
+  border: none;
+  text-align: end;
+  padding-inline-end: 0;
+}
+

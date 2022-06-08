@@ -1,0 +1,24 @@
+{
+  "name": "js-hw-fun-fun-functions",
+  "version": "1.0.0",
+  "description": "Homework assignment -- practice scope and creating functions.",
+  "main": "script.js",
+  "scripts": {
+    "test": "mocha tests/hw-spec.js"
+  },
+  "keywords": [
+    "javascript",
+    "functions",
+    "problem solving"
+  ],
+  "author": "Matt Brendzel (matt.brendzel@generalassemb.ly)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^9.2.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mochai": "^0.2.5"
+  }
+}

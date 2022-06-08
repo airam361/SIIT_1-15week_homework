@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Homework Week1</title>
+
+  </head>
+  <body>
+    <div class="container">      
+      <div>
+        <h1>Well Report</h1>
+      </div>
+      <div>
+        <form class="form">
+          <fieldset>
+            <legend>Well Environment</legend>
+
+            <div class="control-group">
+              <label>Placement:</label>
+              <span>
+                <input
+                  name="placement"
+                  type="radio"
+                  id="onshore"
+                  value="Onshore"
+                />
+                <label for="onshore">Onshore</label>
+
+                <input
+                  name="placement"
+                  type="radio"
+                  id="offshore"
+                  value="Offshore"
+                />
+                <label for="offshore">Offshore</label>
+              </span>
+            </div>
+
+            <div class="control-group">
+              <label for="region">Region:</label>
+              <input type="text" id="region" placeholder="Ex. North Sea" />
+            </div>
+
+            <div class="control-group">
+              <label for="purpose">Purpose:</label>
+              <select name="purpose" id="purpose">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="1">Exploration drilling</option>
+                <option value="2">Exploatation drilling</option>
+                <option value="3">In production</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Well Structure</legend>
+            <div class="control-group">
+              <label for="depth">Depth:</label>
+              <input type="number" id="depth" />
+              <select name="purpose" id="purpose">
+                <option value="1">m</option>
+                <option value="2">ft</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="nosections">Number of sections:</label>
+              <input type="number" id="nosections" />
+            </div>
+
+            <div class="control-group">
+              <label for="profile">Well profile:</label>
+              <select name="profile" id="profile">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="1">Vertical</option>
+                <option value="2">Horizontal</option>
+                <option value="3">Long-Horizontal</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>HSE Events</legend>
+            <textarea name="hse" placeholder="Please write here..."></textarea>
+          </fieldset>
+
+          <fieldset class="last-fieldset">
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

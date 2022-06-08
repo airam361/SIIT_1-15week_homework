@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+}
+
+#container {
+  width: 100%;
+}
+
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+
+.first-navbar {
+  width: 100%;
+  height: 2.5rem;
+  background: #353535;
+  display: flex;
+  justify-content: flex-end;
+}
+.first-navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.first-navbar ul li {
+  display: inline-block;
+  color: #fff;
+  margin: 0 0.6rem;
+  font-size: 0.95rem;
+  position: relative;
+}
+.first-navbar ul li:last-of-type {
+  margin: 0 1.2rem 0 0.6rem;
+}
+
+.select-hover {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 1.4rem;
+  right: 0;
+  width: 200px;
+  height: auto;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  color: #353535;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.select-hover ul {
+  display: block;
+  align-items: none;
+}
+.select-hover ul li {
+  color: #353535;
+}
+
+.first-navbar ul li:hover,
+.first-navbar ul li:hover .triangle {
+  color: #717d72;
+  border-color: #717d72 transparent transparent transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.first-navbar ul li:hover .triangle {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+#news:hover .select-hover,
+#support:hover .select-hover {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.first-navbar .material-icons {
+  margin: 0 0.2rem 0 0;
+}
+
+.triangle {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-width: 6px 6px 0 6px;
+  border-color: #ffffff transparent transparent transparent;
+  border-style: solid;
+  background: none;
+  margin: 0 0 0 0.2rem;
+}
+
+.second-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  height: 3.87rem;
+  transition: top 0.3s;
+  background: #f9f9f9;
+  border-bottom: 1px solid #353535;
+}
+.second-navbar > div {
+  display: flex;
+  align-items: center;
+}
+.second-navbar > div > a {
+  margin-top: 9px;
+  padding: 0 2rem;
+  text-decoration: none;
+}
+.second-navbar > div > span:last-of-type {
+  padding: 0 2rem;
+}
+.second-navbar ul {
+  list-style: none;
+  font-weight: 700;
+  padding: 0;
+  display: flex;
+}
+.second-navbar ul li {
+  display: flex;
+  align-items: center;
+  margin: 0 1.5rem;
+  padding-bottom: 4px;
+  height: 3.87rem;
+}
+.second-navbar ul li:hover {
+  color: #0097d6;
+  padding-bottom: 0px;
+  border-bottom: 4px solid #0097d6;
+  cursor: pointer;
+}
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  background-image: url("./images/h10-presidents-promo-contingency-sa-1280-2x.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 892px;
+}
+
+.main-banner__info {
+  padding-left: 16rem;
+}
+
+.main-banner__info img {
+  margin-bottom: 1.5rem;
+}
+
+.main-banner__info h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.main-banner__info h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.main-banner__info p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.main-banner__info p span:last-of-type {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.main-banner__info button {
+  color: #fff;
+  background: #111;
+  border: 2px solid #111;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 16px 48px;
+  cursor: pointer;
+  /* transition-property: all; */
+  transition-timing-function: ease-in-out;
+  transition: 0.1s;
+}
+.main-banner__info > span {
+  position: relative;
+}
+#underlay {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 191px;
+  height: 49px;
+  border-radius: 8px;
+  padding: 16px 48px;
+  display: block;
+  background: transparent;
+  border: 2px solid #111;
+}
+
+.main-banner__info > span:hover button {
+  transform: translate(-5px, -5px);
+}
+
+.image__1 {
+  background-image: url("./images/img1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.image__2 {
+  display: inline-block;
+  background-image: url("./images/img2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50%;
+}
+.image__3 {
+  display: inline-block;
+  background-image: url("./images/img3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 50%;
+}
+.image__4 {
+  display: inline-block;
+  background-image: url("./images/img4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 50%;
+}
+
+.accessories {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 740px;
+  width: auto;
+  margin: 8rem 14rem;
+}
+
+.accessories__container-1 {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 20px 0 0 20px;
+}
+
+.accessories__container-2 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-left: 1rem;
+  overflow: hidden;
+  border-radius: 0 20px 20px 0;
+}
+
+.accessories__container__inner-1 {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.accessories__container__inner-2 {
+  display: flex;
+  flex-grow: 1;
+  padding-top: 1rem;
+}
+
+.accessories__container__inner-2 > div:first-of-type {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.accessories__container__inner-2 > div:last-of-type {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+  padding-left: 1rem;
+}
+
+.accessories img {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.accessories__container-1 h1 {
+  position: absolute;
+  display: block;
+  width: 40%;
+  font-size: 4rem;
+  line-height: 1.1;
+  top: 5rem;
+  left: 5rem;
+}
+
+.accessories__container__inner-1 h1 {
+  position: absolute;
+  display: block;
+  font-size: 2.5rem;
+  top: 10rem;
+  left: 5rem;
+}
+
+.accessories__container__inner-2 h1 {
+  position: absolute;
+  display: block;
+  font-size: 2.5rem;
+  bottom: 1rem;
+  left: 7rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 30rem;
+  padding: 3rem 0 0 0;
+  background: #111;
+  color: #fff;
+}
+.footer h3 {
+  margin-bottom: 2rem;
+}
+.footer ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.footer ul li {
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+.footer ul li:hover {
+  color: #353535;
+  cursor: pointer;
+}

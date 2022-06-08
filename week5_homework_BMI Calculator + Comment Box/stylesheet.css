@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #45b879;
+}
+
+.container {
+  max-width: 50rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: white;
+  margin: 1rem auto;
+}
+
+.title {
+  text-align: center;
+  color: #45b879;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+figure > img {
+  width: 50%;
+}
+
+.calculator {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.control-group {
+  padding: 0.5rem;
+}
+.control-group > label {
+  font-weight: bold;
+  display: inline-block;
+  color: #4c7bb8;
+  width: 25%;
+}
+
+.left,
+.right {
+  padding: 0 1rem;
+}
+
+.left {
+  flex-basis: 50%;
+}
+.middle {
+  display: flex;
+  align-items: center;
+}
+.right {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 40%;
+}
+.right h3 {
+  color: transparent;
+  margin-top: 10px;
+}
+
+.right h2 {
+  margin: 0;
+}
+
+.progress {
+  padding: 0 1rem;
+}
+progress[value] {
+  visibility: hidden;
+  -webkit-appearance: none;
+  height: 15px;
+  width: 100%;
+}
+progress[value]::-webkit-progress-bar {
+  background-image: -webkit-linear-gradient(
+    left,
+    #72caff 0 38.14%,
+    #68ffa3 38.14% 51.54%,
+    #ffdf77 51.54% 61.8%,
+    #ff5b6f 61.8% 100%
+  );
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(
+      -45deg,
+      transparent 33%,
+      rgba(0, 0, 0, 0.2) 33%,
+      rgba(0, 0, 0, 0.2) 66%,
+      transparent 66%
+    ),
+    -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-size: 28px 14px, 100% 100%, 100% 100%;
+}
+
+.middle button {
+  display: block;
+  background-color: #4c7bb8;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #4c7bb8;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.middle button:hover {
+  background-color: #375883;
+  border: 1px solid #375883;
+}
+
+.comments > p {
+  text-align: center;
+}
+
+#commentform,
+.comments {
+  padding: 0.5rem 2rem;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+}
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.control input,
+.control textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+.control textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+.control input:focus,
+.control textarea:focus {
+  background-color: #f2fff8;
+  outline-color: #45b879;
+}
+
+.actions {
+  text-align: right;
+}
+.actions button {
+  background-color: #45b879;
+  color: white;
+  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #45b879;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.actions button:hover {
+  background-color: #fff;
+  color: #45b879;
+  border: 2px solid #45b879;
+}
+
+.comment {
+  padding: 1rem 0;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.comment__name {
+  color: #45b879;
+  font-weight: bold;
+  font-size: 18px;
+}
+.comment__date {
+  color: #808080;
+  font-size: 14px;
+}
+.comment__content {
+  padding: 0 0 0 2rem;
+  font-size: 14px;
+}
+.comment__actions {
+  display: flex;
+  justify-content: space-between;
+}
+.comment__actions button {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: none;
+  color: #808080;
+  cursor: pointer;
+  padding: 0;
+}
+.comment hr {
+  border: none;
+  border-bottom: 1px solid #45b879;
+}
+.replyComment {
+  margin-right: 10px;
+}
+.replyComment a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.comment__reply {
+  display: none;
+  margin-left: 50px;
+  padding-left: 25px;
+  border-left: 1px dotted #45b879;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* .showReplyComment[commentId="bianca"] > span[iconVisible="whenRepliesHidden"] {
+  color: red;
+} */

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Homework Week5</title>
+
+    <script src="./bmi.js" defer></script>
+    <script src="./commentBox.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <figure>
+        <img src="./images/BMI.jpg" />
+      </figure>
+      <div class="title">
+        <h1>BMI Calculator</h1>
+      </div>
+      
+      <div class="calculator">
+        <div class="left">
+          <div class="control-group">
+            <label>Gender</label>
+            <span>
+              <input name="gender" type="radio" id="male" />
+              <label for="male">Male</label>
+
+              <input name="gender" type="radio" id="female" />
+              <label for="female">Female</label>
+            </span>
+          </div>
+          <div class="control-group">
+            <label for="height">Height</label>
+            <input type="number" id="height" />
+            <span>m</span>
+          </div>
+          <div class="control-group">
+            <label for="weight">Weight</label>
+            <input type="number" id="weight" />
+            <span>kg</span>
+          </div>
+        </div>
+        <div class="middle"><button>>>></button></div>
+        <div class="right">
+          <h3>Your BMI is</h3>
+          <h2 id="bmi-result"></h2>
+          <h2 id="bmi-text"></h2>
+        </div>
+      </div>
+      <div class="progress">
+        <progress value="" max="48.5"></progress>
+      </div>
+    </div>
+    <div class="container">
+      <div class="title">
+        <h1>Comments</h1>
+      </div>
+      <div class="comments"></div>
+      <form id="commentform">
+        <div class="control">
+          <label for="name">Your name</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="control">
+          <label for="email">Your email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="control">
+          <label for="comment">Your comment</label>
+          <textarea name="comment" id="comment"></textarea>
+        </div>
+        <div class="actions">
+          <button class="btn" id="addComment">Add Comment</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

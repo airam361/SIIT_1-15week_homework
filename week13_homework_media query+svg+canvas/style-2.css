@@ -1,0 +1,20 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.svg,
+.canvas {
+  display: inline-block;
+  margin: 20px;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+.canvas {
+  padding: 10px;
+  border: 30px solid #b08968;
+}
+
+/* canvas {
+} */

@@ -1,0 +1,19 @@
+.status-icon {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.unknown {
+  background-color: #808080;
+}
+
+.dead {
+  background-color: #ff0000;
+}
+
+.alive {
+  background-color: #55cc44;
+}

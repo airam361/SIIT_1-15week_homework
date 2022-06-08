@@ -1,0 +1,139 @@
+body {
+  padding-bottom: 90px;
+}
+
+#backdrop {
+  position: fixed;
+  display: none;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+#modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  background: white;
+  padding: 32px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.main-banner {
+  background-color: #f6f6f6;
+  height: 100px;
+  text-align: center;
+}
+h2,
+h3 {
+  display: inline-block;
+  line-height: 2;
+  font-weight: normal;
+}
+h2 {
+  font-size: 48px;
+}
+.main-banner h3 {
+  font-size: 32px;
+  color: #6c6c6c;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 50px auto;
+  background-color: #f6f6f6;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#div1 {
+  display: flex;
+}
+#div2 {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+#div1 > div {
+  width: 50%;
+}
+
+.control-group {
+  padding: 5px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-family: inherit;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #6c6c6c;
+  border-radius: 4px;
+}
+textarea {
+  min-width: 100%;
+  min-height: 153px;
+  max-height: 300px;
+  resize: vertical;
+  border: 1px solid #6c6c6c;
+  border-radius: 4px;
+  font-family: inherit;
+}
+button {
+  background-color: #013b80;
+  color: #fff;
+  border: 1px solid #013b80;
+  padding: 8px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: inherit;
+}
+button:hover {
+  background-color: #bedaff;
+  border: 1px solid #bedaff;
+  color: #013b80;
+  font-weight: bold;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.social-media div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+.social-media h3 {
+  text-align: center;
+  font-weight: 500;
+  border-bottom: 1px solid #6c6c6c;
+}
+.social-media ul {
+  justify-content: space-between;
+}
+.social-media ul li {
+  margin-top: 20px;
+  flex-basis: 80px;
+}
+.social-media ul li:hover {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 960px;
+}

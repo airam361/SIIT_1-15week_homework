@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+}
+
+div {
+  display: flex;
+  width: 80%;
+}
+
+img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1920px) {
+  body {
+    background-color: green;
+  }
+  div {
+    border: 5px solid red;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1919px) {
+  body {
+    background-color: orange;
+  }
+  div {
+    border: 5px solid blue;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1023px) {
+  body {
+    background-color: pink;
+  }
+  div {
+    border: 5px solid yellow;
+  }
+}
+
